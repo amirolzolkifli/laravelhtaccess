@@ -1,2 +1,2 @@
-# laravelhtaccess
-htaccess file to be put in the root folder of your Laravel so that it can be opened without modify any Laravel files when uploading the script in public_html folder of your web hosting.
+# laravel htaccess
+htaccess file to be put in the root folder of your Laravel so that it can be opened without the need to modify any Laravel files when you are uploading the script in the public_html folder of your shared web hosting.
