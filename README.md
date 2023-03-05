@@ -38,7 +38,7 @@ $app = require_once __DIR__.'/../laravel/bootstrap/app.php';
 
 4) In the public_html directory, create a new file named .htaccess if it does not already exist.
 
-5) Edit the .htaccess file and add the following lines:
+5) Edit the .htaccess file and add the following lines (or use the .htaccess given in this git):
 
 ```
 RewriteEngine On
