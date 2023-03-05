@@ -1,12 +1,15 @@
 # Laravel htaccess
 .htaccess file to be put in the root folder of your Laravel so that it can be opened without the need to modify any Laravel folders/files when you are uploading the script in the public_html folder of your shared web hosting.
 
+# How to Use Laravel htaccess
+Just upload the .htaccess in this git to the root of Laravel project. Put it together with the .env file.
+
 
 # Laravel Security on Shared Hosting
 
 Using Laravel on Shared Hosting is a bit tricky since we do not have the access ( or limited ) to the SSH. Furthermore, we can't also modify the server settings such as document root. In order to make sure the HTTP Request goes to the public folder, we need to modify the rewrite rule as in the file .htaccess in this git.
 
-However, there are also some securities concern IF you upload ALL Laravel folders and files in the public_html. Thus, you need to modify the directory structure to increase your Laravel project.
+However, there are also some securities concern IF you upload ALL the Laravel folders and files in the public_html. Thus, you need to modify the directory structure to increase your Laravel project security.
 
 To make requests coming to Laravel go to the public folder, you can follow the steps below:
 
