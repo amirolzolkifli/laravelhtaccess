@@ -1,7 +1,10 @@
 # Laravel htaccess
+
 .htaccess file to be put in the root folder of your Laravel so that it can be opened without the need to modify any Laravel folders/files when you are uploading the script in the public_html folder of your shared web hosting.
 
+
 # How to Use Laravel htaccess
+
 Just upload the .htaccess in this git to the root of Laravel project. Put it together with the .env file.
 
 
@@ -21,26 +24,26 @@ To make requests coming to Laravel go to the public folder, you can follow the s
 
 FROM
 
-`
+```
 require __DIR__.'/../vendor/autoload.php';
 $app = require_once __DIR__.'/../bootstrap/app.php';
-`
+```
 
 TO
 
-`
+```
 require __DIR__.'/../laravel/vendor/autoload.php';
 $app = require_once __DIR__.'/../laravel/bootstrap/app.php';
-`
+```
 
 4) In the public_html directory, create a new file named .htaccess if it does not already exist.
 
 5) Edit the .htaccess file and add the following lines:
 
-`
+```
 RewriteEngine On
 RewriteRule ^(.*)$ laravel/public/$1 [L]
-`
+```
 
 
 6) Save the .htaccess file.
