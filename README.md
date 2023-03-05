@@ -34,8 +34,10 @@ $app = require_once __DIR__.'/../laravel/bootstrap/app.php';
 
 5) Edit the .htaccess file and add the following lines:
 
+`
 RewriteEngine On
 RewriteRule ^(.*)$ laravel/public/$1 [L]
+`
 
 
 6) Save the .htaccess file.
